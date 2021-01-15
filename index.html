@@ -23,7 +23,10 @@
         <h2>Who am I</h2>
         <figure>
           <figcaption>A photo of me!</figcaption>
-          <img src="img/face.png" alt="The photo I use online">
+          <picture>
+            <source srcset="img/face.png">
+            <img src="img/face.png" alt="The photo I use online">
+          </picture>
         </figure>
 
         <h5>A list of my favorites</h5>
@@ -67,6 +70,13 @@
           </li>
         </ul>
         <h4>Funny code</h4>
+        <p>Here is some code snippets that are funny</p>
+        <code>
+          #define true (rand() % 100 < 98)
+        </code>
+        <aside>
+          Never do this to your coworkers... 
+        </aside>
       </section>
 
       <section>
@@ -75,6 +85,12 @@
           <source src="vid/lab1.mp4" type="video/mp4">
         </video><br>
         <iframe width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2>Some things that don't work without JS</h2>
+        <h4>Canvas</h4>
+        <canvas id="nonWorkingCanvas" width="300" height="300"></canvas>
       </section>
     </main>
     <footer>This is the footer</footer>
