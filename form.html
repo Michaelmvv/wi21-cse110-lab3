@@ -23,34 +23,34 @@
         <fieldset>
           <legend>Contact Info</legend>
           <label for="firstName">First Name: </label>
-          <input type="text" name="firstName"> <br>
+          <input type="text" id="firstName" name="firstName"> <br>
 
           <label for="lastName">Last Name: </label>
-          <input type="text" name="lastName"><br>
+          <input type="text" id="lastName" name="lastName"><br>
         
           <br>
           <label for="email">Email: </label>
-          <input type="email" name="email"> <br>
+          <input type="email" id="email" name="email"> <br>
 
           <br>
           <label for="phone">Phone: </label>
-          <input type="tel" name="phone"> <br>
+          <input type="tel" id="phone" name="phone"> <br>
 
           <br>
           <label for="website">Website: </label>
-          <input type="url" name="website"> <br>
+          <input type="url" id="website" name="website"> <br>
         </fieldset>
 
         <fieldset>
           <legend>Your FAKE info</legend>
           <label for="cardn">Number not front of the card: </label>
-          <input type="number" name="cardn" disabled> <br>
+          <input type="number" id="cardn" name="cardn" disabled> <br>
           <br>
-          <label for="carde">Not the experation date: </label>
-          <input type="date" name="carde" disabled> <br>
+          <label for="carde" >Not the experation date: </label>
+          <input type="date" id="carde" name="carde" disabled> <br>
           <br>
-          <label for="cardp">not the 3 numbers on the back </label>
-          <input type="password" name="cardp" disabled> <br>
+          <label for="cardp" >not the 3 numbers on the back </label>
+          <input type="password" id="cardp" name="cardp" disabled> <br>
         </fieldset>
         
         <fieldset>
@@ -79,7 +79,7 @@
             </optgroup>
           </select>
           <br>
-          <label for="mc">Choose a Minecraft:</label>
+          <label for="mc-choice">Choose a Minecraft:</label>
           <input list="mc-list" id="mc-choice" name="mc-choice" />
 
           <datalist id="mc-list">
@@ -97,9 +97,9 @@
         <fieldset>
           <legend>Final Questions</legend>
           <label for="signup">Sign up for the mailing list: </label>
-          <input type="checkbox" name="signup"><br>
+          <input type="checkbox" id="signup" name="signup"><br>
           <label for="doesNothing">I understand that this form does nothing: </label>
-          <input type="checkbox" name="doesNothing">
+          <input type="checkbox" id="doesNothing" name="doesNothing">
         </fieldset>
         
 
