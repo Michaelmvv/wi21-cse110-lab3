@@ -1,0 +1,22 @@
+@media (max-width: 550px){
+  body {
+    /* Kill the eyes of mobile users! */
+    background-color:rgb(218, 255, 31); 
+  }
+}
+
+table {
+  border: 2px dashed #15ffdc9a;
+  border-collapse: collapse;
+  width: auto;
+}
+table caption{
+  background-color: hsl(296, 91%, 58%);
+}
+td, th {
+  border: 2px dotted greenyellow;
+  text-align: center;
+}
+.hoverHide:hover{
+  visibility: hidden;
+}
