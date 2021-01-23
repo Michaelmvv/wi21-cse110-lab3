@@ -86,8 +86,13 @@ header {
   grid-column: 1 / 5;
   grid-row: 3 / 3;
 }
-.gridItem-b{
+.gridItem.d{
   background-color: #15c1ff96;
   grid-column: 1 / 5;
   grid-row: 0 / 3;
+}
+input:not(input[type=checkbox]) {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
 }
