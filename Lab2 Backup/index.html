@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Michael Maddy</title>
+    <meta name="description" content="Michael Maddy's website for CSE110 Lab2">
+    <meta name="author" content="Michael Maddy">
+    <link rel="icon" type="image/png" href="img/face.png">
+    <!-- Remove refresh when done... Auto reloads every 30s-->
+    <!-- <meta http-equiv="refresh" content="30">  -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a> ~ 
+        <a href="form.html">Form</a> ~ 
+        <a href="https://cse110.michaelmvv.net/">Lab 1</a> ~ 
+        <a href="https://github.com/Michaelmvv/">Github</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Michael Maddy</h1>
+      <section>
+        <h2>Who am I</h2>
+        <figure>
+          <figcaption>A photo of me!</figcaption>
+          <picture>
+            <source srcset="img/face.png">
+            <img src="img/face.png" alt="The photo I use online">
+          </picture>
+        </figure>
+        <hr>
+        <h5>My favorites</h5>
+        <table>
+          <caption>A list of favorites</caption>
+          <colgroup span="3"></colgroup>
+          <tr>
+            <th>Games</th>
+            <th>Food</th>
+            <th>Languages</th>
+          </tr>
+          <tr>
+            <td>Hamburger</td>
+            <td>Minecraft</td>
+            <td>Java</td>
+          </tr>
+          <tr>
+            <td>Ice cream</td>
+            <td>Civ 5</td>
+            <td>LaTeX</td>
+          </tr>
+          <tr>
+            <td>Pizza</td>
+            <td>Cities Skylines</td>
+            <td>C</td>
+          </tr>
+        </table>
+        <div>
+          <p> My <b>favorite</b> color is blue </p>
+          <p> My <b>favorite</b> <i>non-computer</i> pass time is reading</p>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>Stuff I don't like</h3>
+        <ol>
+          <li>Bad grades</li>
+          <li>Arrogant people</li>
+        </ol>
+      </section>
+      <hr>
+      <section>
+        <h2>More info</h2>
+        <h4>Hardware I have used</h4>
+        <ul>
+          <li>
+            <a href="https://developer.nvidia.com/embedded/jetson-nano-developer-kit">Jetson Nano</a>
+          </li>
+          <li>
+            <a href="https://www.raspberrypi.org/">Raspberry Pi</a>
+          </li>
+          <li>
+            <a href="https://www.arduino.cc/">Arduino</a>
+          </li>
+        </ul>
+        <h4>Funny code</h4>
+        <p>Here is some code snippets that are funny</p>
+        <code>
+          #define true (rand() % 100 &lt; 98)
+        </code>
+        <aside>
+          Never do this to your coworkers... 
+        </aside>
+
+        <h4>Projects</h4>
+        <details>
+          <summary>Yonder Dynamics</summary>
+          <p> I am a member of <a href="https://yonderdynamics.org/#/">Yonder Dynamics</a></p>
+        </details>
+        <details>
+          <summary>Iron Man Hand</summary>
+          <p> Made a Iron Man hand!</p>
+        </details>
+      </section>
+      <hr>
+      <section>
+        <h2>Fun videos</h2>
+        <video width="960" height="540" controls>
+          <source src="vid/lab1.mp4" type="video/mp4">
+        </video><br>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <hr>
+      <section>
+        <h2>Some artwork!</h2>
+        <svg viewBox="0 0 100 100" width="300" xmlns="http://www.w3.org/2000/svg" fill="blue" stroke="red">
+          <circle cx="50" cy="50" r="25"/>
+          <circle cx="50" cy="50" r="20"/>
+          <circle cx="50" cy="50" r="15"/>
+          <circle cx="50" cy="50" r="10"/>
+          <circle cx="50" cy="50" r="5"/>
+        </svg>
+      </section>
+      <hr>
+      <section>
+        <h2>Some things that don't work without JS</h2>
+        <h4>Canvas</h4>
+        <canvas id="nonWorkingCanvas" width="300" height="300"></canvas>
+        <h4>Template</h4>
+        <template>
+          <p> <em> HA HA HA YOU NEED JAVASCRIPT TO MAKE THIS WORK</em></p>
+         </template>
+         <h4>Button</h4>
+         <button type="button" name="deadButton">Click this button!</button>
+         <h4>Form</h4>
+         <p>See <a href="/form.html">here</a> for form</p>
+      </section>
+    </main>
+    <footer>This is the footer</footer>
+  </body>
+</html>

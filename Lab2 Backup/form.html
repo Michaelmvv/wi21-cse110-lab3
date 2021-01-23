@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A form</title>
+    <meta name="description" content="A form for CSE110 Lab2">
+    <meta name="author" content="Michael Maddy">
+    <link rel="icon" type="image/png" href="img/face.png">
+    <!-- Remove refresh when done... Auto reloads every 30s-->
+    <!-- <meta http-equiv="refresh" content="30">  -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a> ~ 
+        <a href="form.html">Form</a> ~ 
+        <a href="https://cse110.michaelmvv.net/">Lab 1</a> ~ 
+        <a href="https://github.com/Michaelmvv/">Github</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact + Info + Survey</h1>
+      <form>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="firstName">First Name: </label>
+          <input type="text" id="firstName" name="firstName"> <br>
+
+          <label for="lastName">Last Name: </label>
+          <input type="text" id="lastName" name="lastName"><br>
+        
+          <br>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email"> <br>
+
+          <br>
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone"> <br>
+
+          <br>
+          <label for="website">Website: </label>
+          <input type="url" id="website" name="website"> <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your FAKE info</legend>
+          <label for="cardn">Number not front of the card: </label>
+          <input type="number" id="cardn" name="cardn" disabled> <br>
+          <br>
+          <label for="carde" >Not the experation date: </label>
+          <input type="date" id="carde" name="carde" disabled> <br>
+          <br>
+          <label for="cardp" >not the 3 numbers on the back </label>
+          <input type="password" id="cardp" name="cardp" disabled> <br>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Survey</legend>
+          <label for="anOptGroup">Choose one</label>
+          <select id="anOptGroup">
+            <optgroup label="Linux">
+                <option>Ubuntu</option>
+                <option>CentOS</option>
+                <option>Fedora</option>
+                <option>ClearOS</option>
+                <option>Kali Linux</option>
+                <option>Other</option>
+            </optgroup>
+            <optgroup label="Windows">
+                <option>XP</option>
+                <option>VISTA</option>
+                <option>7</option>
+                <option>8</option>
+                <option>8.1</option>
+                <option>10</option>
+                <option>Other</option>
+            </optgroup>
+            <optgroup label="MacOS">
+              <option>Other</option>
+            </optgroup>
+          </select>
+          <br>
+          <label for="mc-choice">Choose a Minecraft:</label>
+          <input list="mc-list" id="mc-choice" name="mc-choice" />
+
+          <datalist id="mc-list">
+              <option value="Java">
+              <option value="Bedrock">
+              <option value="Pocket">
+              <option value="Education">
+              <option value="PI Edition">
+              <option value="Other">  
+          </datalist>
+          <br>
+          <label for="fact">Tell us the least interesting thing about you:</label><br>
+          <textarea id="fact" name="fact" rows="5" cols="33">I can sit!</textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Final Questions</legend>
+          <label for="signup">Sign up for the mailing list: </label>
+          <input type="checkbox" id="signup" name="signup"><br>
+          <label for="doesNothing">I understand that this form does nothing: </label>
+          <input type="checkbox" id="doesNothing" name="doesNothing">
+        </fieldset>
+        
+
+        <br><input type="submit">
+      </form>
+    </main>
+    <footer>A footer</footer>
+  </body>
+</html>
