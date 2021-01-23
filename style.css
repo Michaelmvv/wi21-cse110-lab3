@@ -29,6 +29,7 @@ table caption{
 td, th {
   border: 2px dotted greenyellow;
   text-align: center;
+  border-width: thick;
 }
 .hoverHide:hover{
   visibility: hidden;
@@ -43,6 +44,7 @@ header {
   padding: 0px;
   margin: 0px;
   top: 0;
+  left: 0;
 }
 
 .FlexContain{
