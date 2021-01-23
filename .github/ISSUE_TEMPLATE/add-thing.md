@@ -2,7 +2,7 @@
 name: Add Thing
 about: Add something to the website
 title: ''
-labels: ''
+labels: CSS Stuff
 assignees: Michaelmvv
 
 ---
