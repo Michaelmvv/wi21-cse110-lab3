@@ -44,3 +44,18 @@ header {
   margin: 0px;
   top: 0;
 }
+
+.FlexContain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.rect {
+  flex-grow: 1;
+  height: 100px;
+}
