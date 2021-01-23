@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/monoton/v10/5h1aiZUrOngCibe4TkHLQka4BU4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.coolText {
+  font-family: Monoton;
+}
+@media (max-width: 550px){
+  body {
+    /* Kill the eyes of mobile users! */
+    background-color:rgb(218, 255, 31); 
+  }
+}
+.hide {
+  display: none;
+}
+
+table {
+  border: 2px dashed #15ffdc9a;
+  border-collapse: collapse;
+  width: auto;
+}
+table caption{
+  background-color: hsl(296, 91%, 58%);
+}
+td, th {
+  border: 2px dotted greenyellow;
+  text-align: center;
+}
+.hoverHide:hover{
+  visibility: hidden;
+}
+.underline {
+  text-decoration: pink wavy underline;
+}
+header {
+  width: 100%;
+  background-color: deepskyblue;
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  top: 0;
+}
+
+.FlexContain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.rect {
+  flex-grow: 1;
+  height: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 55px 10px 358px 59px;
+  grid-template-rows: 20px 69px 55px;
+  gap: 4px 2px;
+  justify-items: stretch;
+  /* align-items: center; */
+  justify-content: center;
+}
+.gridItem-a{
+  background-color: red;
+  grid-column: 1 / span 3;
+  grid-row: 2 / 2;
+}
+.gridItem-b{
+  background-color: green;
+  grid-column: 2 / 4;
+  grid-row: 1 ;
+}
+.gridItem-c{
+  background-color: pink;
+  grid-column: 1 / 5;
+  grid-row: 3 / 3;
+}
+.gridItem-b{
+  background-color: #15c1ff96;
+  grid-column: 1 / 5;
+  grid-row: 0 / 3;
+}

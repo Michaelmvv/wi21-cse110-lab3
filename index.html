@@ -5,8 +5,15 @@
     <meta name="description" content="Michael Maddy's website for CSE110 Lab2">
     <meta name="author" content="Michael Maddy">
     <link rel="icon" type="image/png" href="img/face.png">
+    <link rel="stylesheet" href="style.css">
     <!-- Remove refresh when done... Auto reloads every 30s-->
     <!-- <meta http-equiv="refresh" content="30">  -->
+    <style>
+      hr.line {
+        color: #3afc1c;
+        border: 2px dashed;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,24 +21,29 @@
         <a href="index.html">Home</a> ~ 
         <a href="form.html">Form</a> ~ 
         <a href="https://cse110.michaelmvv.net/">Lab 1</a> ~ 
+        <a href="https://lab2.cse110.michaelmvv.net/">Lab 2</a> ~ 
         <a href="https://github.com/Michaelmvv/">Github</a>
       </nav>
     </header>
-    <main>
+    <main style="padding-top: 0.3cm;">
+      <div class="hide">
+        <h1>YOU CANT SEE ME</h1>
+      </div>
+      
       <h1>Michael Maddy</h1>
       <section>
         <h2>Who am I</h2>
         <figure>
-          <figcaption>A photo of me!</figcaption>
-          <picture>
+          <figcaption style="color: darkorange;">A photo of me!</figcaption>
+          <picture class="hoverHide">
             <source srcset="img/face.png">
-            <img src="img/face.png" alt="The photo I use online">
+            <img class="hoverHide" src="img/face.png" alt="The photo I use online">
           </picture>
         </figure>
-        <hr>
+        <hr class="line">
         <h5>My favorites</h5>
         <table>
-          <caption>A list of favorites</caption>
+          <caption class="coolText" style="font-size: 15pt; word-spacing: 1ex;">A list of favorites</caption>
           <colgroup span="3"></colgroup>
           <tr>
             <th>Games</th>
@@ -84,10 +96,10 @@
         </ul>
         <h4>Funny code</h4>
         <p>Here is some code snippets that are funny</p>
-        <code>
+        <code style="display: inline-block;">
           #define true (rand() % 100 &lt; 98)
         </code>
-        <aside>
+        <aside class="underline">
           Never do this to your coworkers... 
         </aside>
 
@@ -132,7 +144,28 @@
          <h4>Button</h4>
          <button type="button" name="deadButton">Click this button!</button>
          <h4>Form</h4>
-         <p>See <a href="/form.html">here</a> for form</p>
+         <p style="font-size: 40pt; border: dotted firebrick;">See <a href="/form.html">here</a> for form</p>
+      </section>
+      <hr>
+      <section>
+        <h2>Flex Stuffs I guess</h2>
+        <div class="FlexContain">
+          <div class="box" style="background-color: gold;">A Box</div>
+          <div class="rect" style="background-color: rgb(179, 0, 140);">Uses Flex Grow</div>
+          <div class="box" style="background-color:fuchsia;">A Box</div>
+
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2>Grid Stuffs I guess</h2>
+        <div class="grid">
+          <div class="gridItem-a">Grid A</div>
+          <div class="gridItem-b">Grid B</div>
+          <div class="gridItem-c">Grid C</div>
+          <p class="gridItem-d">Grid D</p>
+
+        </div>
       </section>
     </main>
     <footer>This is the footer</footer>
